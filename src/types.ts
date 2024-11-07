@@ -143,12 +143,12 @@ export type UseAutoCompleteReturn = {
     props: AutoCompleteItemProps,
     creatable?: boolean
   ) => ItemReturnProps;
-  inputRef: React.RefObject<HTMLInputElement>;
+  inputRef: React.RefObject<HTMLInputElement | null>;
   interactionRef: React.RefObject<"mouse" | "keyboard" | null>;
   isOpen: boolean;
   isLoading: boolean;
   itemList: Item[];
-  listRef: React.RefObject<HTMLDivElement>;
+  listRef: React.RefObject<HTMLDivElement | null>;
   onClose: () => void;
   onOpen: () => void;
   placement: PlacementWithLogical;

@@ -27,7 +27,7 @@ export const AutoCompleteItem = forwardRef<AutoCompleteItemProps, "div">(
       getItemProps,
       interactionRef,
     } = useAutoCompleteContext();
-    const itemRef = useRef<any>();
+    const itemRef = useRef<any>(undefined);
     const ref = useMergeRefs(forwardedRef, itemRef);
 
     const itemProps = getItemProps(props);
